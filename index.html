@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Trial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container welcome-screen">
+        <h1 class="title">Welcome to the Trial</h1>
+        <div class="passkey-section">
+            <input type="password" id="passkey" placeholder="Enter Passkey" class="passkey-input">
+            <button class="passkey-submit">Submit</button>
+            <div class="passkey-error"></div>
+        </div>
+        <div class="message" style="display: none;">
+            <p>Congratulations on passing the test! You may now begin the trial.</p>
+            <p>In order to ensure compliance with testing guidelines, from here on out you must record yourself taking the trial.</p>
+            <p>Further instructions will await you, just know that you will automatically be disqualified if you do not record your test taking.</p>
+        </div>
+    </div>
+    <button class="secret-btn" aria-hidden="true"></button>
+    <div class="coin-game" style="display: none;">
+        <div class="coin">
+            <div class="coin-inner">
+                <div class="side heads"></div>
+                <div class="side tails"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
